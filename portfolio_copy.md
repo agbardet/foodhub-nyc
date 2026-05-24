@@ -16,7 +16,7 @@ EDA surfacing a 39% customer feedback gap and $6K revenue concentration risk acr
 - Found that top-20% orders (>$20) generate 60% of platform revenue — a concentration risk requiring strategic diversification
 - Quantified a 5.87-minute weekday delivery penalty pointing to a staffing optimization opportunity worth investigating
 
-**Tags:** `Python` `Pandas` `Seaborn` `Matplotlib` `EDA` `Business Analytics`
+**Tags:** `Python` `NumPy` `Pandas` `Seaborn` `Matplotlib` `EDA` `Business Analytics`
 
 ---
 
