@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodHub NYC — Revenue &amp; Demand Intelligence | Gary Bardet</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fafafa;
+      color: #1a1a1a;
+      line-height: 1.65;
+    }
+    header {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header .back {
+      display: inline-block;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+    }
+    header .back:hover { color: #fff; }
+    header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 10px; }
+    header p  { font-size: 1.05rem; color: #ccc; max-width: 640px; margin: 0 auto 20px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+    .tags span {
+      background: #333;
+      color: #ddd;
+      border-radius: 4px;
+      padding: 4px 12px;
+      font-size: 0.8rem;
+      letter-spacing: 0.03em;
+    }
+
+    main { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+
+    .findings {
+      background: #fff;
+      border-left: 4px solid #E8603C;
+      border-radius: 0 6px 6px 0;
+      padding: 20px 24px;
+      margin-bottom: 36px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+    }
+    .findings h2 { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #E8603C; margin-bottom: 12px; }
+    .findings ul  { padding-left: 18px; }
+    .findings li  { margin-bottom: 8px; font-size: 0.97rem; }
+
+    .blurb { font-size: 0.97rem; color: #333; margin-bottom: 36px; }
+    .blurb p + p  { margin-top: 12px; }
+
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 48px; }
+    .cta a {
+      display: inline-block;
+      padding: 11px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: opacity .15s;
+    }
+    .cta a:hover { opacity: 0.85; }
+    .btn-primary  { background: #E8603C; color: #fff; }
+    .btn-secondary { background: #1a1a1a; color: #fff; }
+    .btn-outline  { background: transparent; color: #1a1a1a; border: 1.5px solid #ccc; }
+
+    .meta {
+      border-top: 1px solid #eee;
+      padding-top: 28px;
+      font-size: 0.85rem;
+      color: #666;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .meta a { color: #1a1a1a; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="back" href="https://agbardet.github.io">← Gary Bardet · Portfolio</a>
+  <h1>FoodHub NYC — Revenue &amp; Demand Intelligence</h1>
+  <p>EDA surfacing a 39% customer feedback gap and $6K revenue concentration risk across 1,898 food delivery orders in New York City.</p>
+  <div class="tags">
+    <span>Python</span>
+    <span>Pandas</span>
+    <span>Seaborn</span>
+    <span>Matplotlib</span>
+    <span>EDA</span>
+    <span>Business Analytics</span>
+  </div>
+</header>
+
+<main>
+  <div class="findings">
+    <h2>Key Findings</h2>
+    <ul>
+      <li><strong>38.77% of orders go unrated</strong> — a satisfaction measurement blind spot that directly impacts restaurant partnership decisions</li>
+      <li><strong>Top-20% orders (&gt;$20) generate 60% of platform revenue</strong> despite being only 29% of order volume</li>
+      <li><strong>Weekend volume is 2.5× weekday</strong> — the platform is effectively a weekend-first business with untapped weekday growth</li>
+      <li><strong>Weekday delivery is 5.87 min slower</strong> than weekend, pointing to a courier staffing gap</li>
+      <li><strong>10.54% of orders exceed 60 min end-to-end</strong> — the threshold most correlated with low ratings and churn</li>
+    </ul>
+  </div>
+
+  <div class="blurb">
+    <p>FoodHub is a New York-based multi-restaurant food delivery aggregator that earns margins of 15–25% per order depending on order value. This exploratory data analysis examines 1,898 orders across 178 restaurants and 14 cuisine categories to answer the business questions that matter most: where is revenue concentrated, what drives customer satisfaction, and where are the operational gaps that cost money?</p>
+    <p>The analysis surfaces three compounding risks in FoodHub's current model: a 39% unrated order rate that creates a quality blind spot, heavy revenue concentration in a small number of high-value orders and restaurants, and a weekday demand gap that represents a direct growth lever. The notebook closes with five prioritized, evidence-backed recommendations.</p>
+  </div>
+
+  <div class="cta">
+    <a class="btn-primary" href="foodhub_eda.html">View Full Notebook</a>
+    <a class="btn-secondary" href="https://github.com/agbardet/foodhub-nyc">Source Code on GitHub</a>
+    <a class="btn-outline" href="https://github.com/agbardet/foodhub-nyc/blob/main/data/foodhub_order.csv">Dataset (CSV)</a>
+    <a class="btn-outline" href="https://github.com/agbardet/foodhub-nyc/blob/main/key_findings.md">Key Findings Report</a>
+  </div>
+
+  <div class="meta">
+    <span>1,898 orders · 9 columns · 178 restaurants · 14 cuisines</span>
+    <span>Net revenue analysed: $6,166.30</span>
+    <a href="https://github.com/agbardet">github.com/agbardet</a>
+  </div>
+</main>
+
+</body>
+</html>
